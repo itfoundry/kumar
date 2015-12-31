@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env AFDKOPython
 
 import hindkit as kit
 
@@ -9,7 +9,7 @@ family = kit.Family(
 )
 
 family.set_masters(
-    masters = [kit.family.Master(family, 'Regular', 0)],
+    masters = [kit.Master(family, 'Regular', 0)],
     modules = [
         # 'kerning',
         # 'mark_positioning',
@@ -22,7 +22,7 @@ family.set_styles(kit.constants.styles.SINGLE)
 
 builder = kit.Builder(family)
 
-builder.fontrevision = '0.200'
+builder.fontrevision = '0.201'
 
 builder.set_options([
 
