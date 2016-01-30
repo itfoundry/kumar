@@ -1,4 +1,4 @@
-*.pyc
 *.ufo
 *(Autosaved).glyphs
-/temp/
+
+temp/
