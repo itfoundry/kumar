@@ -3,35 +3,39 @@
 from __future__ import division, absolute_import, print_function, unicode_literals
 import hindkit as kit
 
-family_filled = kit.Family(
+family = kit.Family(
     client = 'Google Fonts',
-    trademark = 'Kumar One',
     script = 'Gujarati',
-    hide_script_name = True,
+    trademark = 'Kumar One',
+    designers = 'Parimal Parmar',
 )
-family_filled.set_masters([kit.Master(family_filled, 'Regular', 0)])
-family_filled.set_styles(kit.constants.styles.SINGLE)
+family.set_masters(
+    [kit.Master(family, _file_name='Kumar One-Filled.ufo')]
+)
+family.set_styles(kit.constants.styles.SINGLE)
 
 family_outlined = kit.Family(
     client = 'Google Fonts',
-    trademark = 'Kumar One Outline',
     script = 'Gujarati',
-    hide_script_name = True,
+    trademark = 'Kumar One Outline',
+    designers = 'Parimal Parmar',
 )
-family_outlined.set_masters([kit.Master(family_outlined, 'Regular', 0)])
+family_outlined.set_masters(
+    [kit.Master(family_outlined, _file_name='Kumar One-Outlined.ufo')]
+)
 family_outlined.set_styles(kit.constants.styles.SINGLE)
 
-for family in [family_filled, family_outlined]:
+for f in [family, family_outlined]:
     builder = kit.Builder(
-        family,
-        fontrevision = '0.201',
+        f,
+        fontrevision = '0.900',
         vertical_metrics = {
             'Ascender': 750,
             'Descender': -250,
             'LineGap': 200,
         },
         options = {
-            'prep_mark_positioning': True,
+            # 'prepare_mark_positioning': True,
             'override_GDEF': True,
             'do_style_linking': True,
         },
