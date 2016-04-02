@@ -126730,6 +126730,8 @@ width = 748;
 );
 }
 );
+disablesAutomaticAlignment = 1;
+disablesNiceNames = 1;
 kerning = {
 "D923F157-AA1C-43CD-B698-62FBFCFD5A90" = {
 gjJA = {
