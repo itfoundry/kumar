@@ -25,7 +25,7 @@ for tag, family in [
     family.set_styles(kit.constants.styles.SINGLE)
 
     family.info.openTypeNameDesigner = "Parimal Parmar"
-    family.info.openTypeHheaAscender, family.info.openTypeHheaDescender = (1050, -450)
+    family.info.openTypeHheaAscender, family.info.openTypeHheaDescender = (1150, -650)
 
     family.masters[0].filename = 'Kumar One-' + tag
     family.styles[0].abstract_directory = 'styles/' + tag
