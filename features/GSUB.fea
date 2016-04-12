@@ -71,7 +71,7 @@ feature half {
 
   script gujr;
     lookup half;
-    lookup half_old;
+    # lookup half_old;
 
 } half;
 
@@ -121,9 +121,10 @@ feature pres {
     # lookup GENERATED_matra_i_matching;
 
   script gujr;
+    lookup cjct_new;
     lookup pres_decompose;
     lookup pres;
-    lookup pres_old;
+    # lookup pres_old;
     # lookup GENERATED_matra_i_matching;
 
 } pres;
